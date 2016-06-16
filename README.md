@@ -1,0 +1,2 @@
+# SuperNetRpc
+RPC of Supernet
