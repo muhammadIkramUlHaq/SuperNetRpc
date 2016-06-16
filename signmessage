@@ -1,0 +1,10 @@
+# !/bin/bash
+
+echo 'Sign a Message with the Private Key of Given Address'
+echo 'Parameter1: Address Corresponding to Private key to sign with'
+echo 'Parameter2: Message To Sign'
+
+echo 'Return Signature for corresponding Message'
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"signmessage\",\"address\":\"RK4Frtw5N5Zm6MrUjgmh8ZG1JGEtRJgXVo\",\"message\":\"testSignMessage\"}"
+

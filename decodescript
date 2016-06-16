@@ -1,0 +1,12 @@
+#! /bin/bash
+
+echo "RPC: decodescript"
+echo "The decodescript RPC decodes a hex-encoded P2SH redeem script"
+
+echo "Parameter:"
+echo "script: a hex-encoded redeem script"
+
+echo "Result:the decoded script"
+
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"decodescript\",\"script\":\"{}\"}"

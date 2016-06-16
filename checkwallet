@@ -1,0 +1,7 @@
+#! /bin/bash
+
+echo "RPC: checkwallet"
+
+echo "Result: will return the wallet information! good and bad"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"checkwallet\"}"

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo ""
+echo "
+
+The getwalletinfo RPC gets the info of wallet.
+
+Result—the info of wallet
+"
+
+echo ""
+echo ""
+
+#curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getbalance\",\"confirmations\":\"\",\"includeempty\":\"0\",\"watchonly\":\"0\"}"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getinfo\"}"
+# curl --url "http://127.0.0.1:7778"  --data "{\"agents\":\"bitcoinrpc\",\"coin\":\"BTCD\",\"method\":\"getwalletinfo\",\"params\":[]}"

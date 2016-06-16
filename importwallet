@@ -1,0 +1,13 @@
+#! /bin/bash
+
+
+echo "RPC: import wallet"
+echo "Parameter:"
+echo "filename : filename to be given as string"
+
+echo ""
+echo "Result: Information will be return for that wallet in case of success"
+
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"importwallet\",\"filename\":\"\\home\\kashif\\SuperNET\\iguana\\tests\\\"}"
+

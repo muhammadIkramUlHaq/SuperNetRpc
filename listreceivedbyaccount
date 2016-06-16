@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo ""
+echo "
+
+The listreceivedbyaccount RPC lists lists the total number of bitcoins received by each account.
+
+Parameter #1—the minimum number of confirmations a transaction must have to be counted
+Parameter #2—whether to include empty accounts
+Parameter #3—whether to include watch-only addresses in results
+Result—account names, balances, and minimum confirmations
+"
+
+echo "Dependencies:"
+echo "walletpassphrase RPC, Getaccountaddress RPC"
+echo ""
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"listreceivedbyaccount\",\"confirmations\":\"1\",\"includeempty\":\"0\",\"watchonly\":\"0\"}"

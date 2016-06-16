@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo ""
+echo "
+
+The listaccounts RPC lists accounts and their balances.
+
+Parameter #1—the minimum number of confirmations a transaction must have
+Parameter #2—whether to include watch-only addresses in results
+Result—a list of accounts and their balances
+"
+echo ""
+echo "if no specified accounts exist then should return default account otherwise"
+echo ""
+echo "Dependencies:"
+echo "getaccountaddress, setaccount, for specific accounts"
+echo ""
+
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"listaccounts\",\"minconf\":\"1\",\"includewatchonly\":\"0\"}"
+echo ""

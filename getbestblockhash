@@ -1,0 +1,11 @@
+#! /bin/bash
+
+echo "RPC: getbestblockhash"
+
+echo "The getbestblockhash RPC returns the header hash of the most recent block on the best block chain"
+
+echo ""
+
+echo "Result: hash of the tip from the best block chain"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getbestblockhash\"}"

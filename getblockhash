@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo "RPC : getblockhash"
+
+echo "The getblockhash RPC returns the header hash of a block at the given height in the local best block chain"
+echo "Parameter : Height {int}"
+
+echo "Result : the block header hash"
+echo ""
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getblockhash\",\"height\":\"4\"}"

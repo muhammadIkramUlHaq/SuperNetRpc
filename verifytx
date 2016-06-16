@@ -1,0 +1,13 @@
+#! /bin/bash
+
+
+echo "RPC: verifytx"
+echo "This RPC is used to verify the transaction being carried out for corresponding TXID"
+
+echo "Parameter:" 
+echo "txid: Transaction ID"
+echo "txbytes: Transaction Bytes String"
+
+echo "Result : On successful execution we will be getting true response"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"verifytx\",\"txid\":\"{hash}\",\"txbytes\":\"{string}\"}"

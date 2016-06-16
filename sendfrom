@@ -1,0 +1,19 @@
+#! /bin/bash
+
+
+echo "RPC : sendFrom"
+echo "This RPC is used to send some amount to BTC from an account to some specified address"
+
+echo "Parameters:"
+echo ""
+
+echo "fromaccount: Account Name Of Sender "
+echo "toaddress: Address of Receiver"
+echo "amount : Bit Coin to Send"
+echo "minconf : Minimum Confirmation required"
+
+echo ""
+
+echo "Result: on successful transaction TXID will be returned!"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"sendfrom\",\"fromaccount\":\"{}\",\"toaddress\":\"{}\",\"amount\":\"{}\",\"minconf\":\"{}\",\"comment\":\"{}\"}"

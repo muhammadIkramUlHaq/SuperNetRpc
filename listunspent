@@ -1,0 +1,9 @@
+#! /bin/bash
+
+echo "RPC:listunspent"
+echo "The listunspent RPC returns an array of unspent transaction outputs belonging to this wallet"
+echo "Parameter : —the addresses an output must pay"
+echo "Result—the list of unspent outputs"
+echo ""
+#RDZRgdgFLiSkDxCnfPhwx54gsbmTyi6NLd
+curl --url "http://127.0.0.1:7778" --data "{\"method\":\"listunspent\",\"params\":[\"RK4Frtw5N5Zm6MrUjgmh8ZG1JGEtRJgXVo\"]}"

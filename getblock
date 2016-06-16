@@ -1,0 +1,15 @@
+#! /bin/bash
+
+
+echo "RPC : getblock"
+
+echo "The getblock RPC gets a block with a particular header hash from the local/remote block database either as a JSON object or as a serialized block"
+
+echo "Parameters"
+echo "BlockHash: Block Header Hash of block"
+echo "verbose: Whether JSON or hex output"
+echo "remoteonly:Whether to get outputs from remote or local block database"
+
+echo "Result: Result a serialized block or a JSON block"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getblock\",\"blockhash\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"verbose\":\"0\",\"remoteonly\":\"1\"}"

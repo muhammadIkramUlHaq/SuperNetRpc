@@ -1,0 +1,10 @@
+#! /bin/bash
+
+
+echo "RPC: listlockunspent"
+
+echo "The listlockunspent RPC returns a list of temporarily unspendable (locked) outputs"
+
+echo "Result:Result—an array of locked outputs"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"listlockunspent\"}"

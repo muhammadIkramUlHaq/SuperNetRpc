@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo ""
+
+echo "RCP: makekeypair"
+echo "This will create Key Pairs"
+
+echo "Parameter : None"
+echo "Result : KeyPairs will be returned in case of successful response"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"makekeypair\"}"
+
+

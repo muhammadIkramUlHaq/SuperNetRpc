@@ -1,0 +1,15 @@
+#! /bin/bash
+
+
+echo "RPC: sendtoaddress"
+echo "Send Specified Money (BitCoins) to specified Address"
+
+echo "Parameters:"
+echo "Address: Address of Account to Send BitCoin"
+echo "Money: BitCoin to Send"
+echo ""
+echo "Result: On successful transaction , We will be able to get TXID"
+
+
+curl --url "http://127.0.0.1:7778"  --data "{\"method\":\"sendtoaddress\",\"params\":[\"RK4Frtw5N5Zm6MrUjgmh8ZG1JGEtRJgXVo\", 0.001]}"
+

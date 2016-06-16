@@ -1,0 +1,9 @@
+#! /bin/bash
+
+echo "RPC: backup wallet"
+echo "Parameter: filename"
+
+echo "Result : Wallet will be backed up"
+echo ""
+
+curl --url "http://127.0.0.1:7778" --data "{\"method\":\"backupwallet\",\"params\":[\"\home\kashif\SuperNET\iguana\tests\"]}"

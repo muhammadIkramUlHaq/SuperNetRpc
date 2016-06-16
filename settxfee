@@ -1,0 +1,11 @@
+#! /bin/bash
+
+
+echo "RPC:settxfee"
+echo "This RPC will set transaction fee per kilobytes for wallet"
+echo "Parameters:"
+echo "amount: No of BitCoins to be used as transaction fee per kilobytes"
+
+echo "Result: true on successful response"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"settxfee\",\"amount\":\"0.001\"}"

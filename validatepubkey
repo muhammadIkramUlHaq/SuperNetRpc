@@ -1,0 +1,12 @@
+#! /bin/bash
+
+echo "RPC: validatepubkey"
+echo "This RPC will be used to validate the public key"
+echo "Parameter:"
+echo "pubkey: publickey in string"
+
+echo "Result:Public key and address information will be returned in case of successfully verification"
+echo ""
+
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"validatepubkey\",\"pubkey\":\"029c75a58fa46418f49db59ed815fcd77ef1b5429fb4838886807a150918c8f0d3\"}"

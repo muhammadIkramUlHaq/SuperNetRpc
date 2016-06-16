@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo ""
+echo "
+
+The getaccount RPC returns the name of the account associated with the given address.
+
+Parameter #1—a Bitcoin address
+Result—an account name
+
+"
+echo ""
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getaccount\",\"address\":\"RK4Frtw5N5Zm6MrUjgmh8ZG1JGEtRJgXVo\"}"
+
+echo ""
+

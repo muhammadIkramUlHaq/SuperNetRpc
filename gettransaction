@@ -1,0 +1,16 @@
+#! /bin/bash
+
+echo "RPC: getrwatransaction"
+echo "The gettransaction RPC gets detailed information about an in-wallet transaction"
+echo "Parameter:"
+echo ""
+echo "Parameter #1—a transaction identifier (TXID)"
+echo "Parameter #2—whether to include watch-only addresses in details and calculations"
+echo ""
+echo "Result—a description of the transaction"
+
+
+
+
+curl --url "http://127.0.0.1:7778"  --data "{\"method\":\"gettransaction\",\"params\":[\"fe9ba49c411ee7b3ae16f8de6f2e32b4ea469a8ff64766be113817646100bb56\"]}"
+

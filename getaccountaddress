@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo "RPC: getaccountaddress"
+echo "This RPC will return address of account specified"
+echo "Parameter:"
+echo "account: Name of Account whose address to be found"
+
+echo ""
+
+echo "Result: Information of Account will b returned"
+
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getaccountaddress\",\"account\":\"testRPCBTC\"}"

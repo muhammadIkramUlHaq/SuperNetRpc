@@ -1,0 +1,13 @@
+#! /bin/bash
+
+
+echo "RPC : getblockcount"
+
+echo "The getblockcount RPC returns the number of blocks in the local best block chain" 
+
+echo "Parameter : None"
+echo "Result—the number of blocks in the local best block chain"
+
+echo ""
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"getblockcount\"}"

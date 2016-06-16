@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "RPC: listaddressgroupings"
+echo "The listaddressgroupings RPC lists groups of addresses that may have had their common ownership made public by common use as inputs in the same transaction or from being used as change from a previous transaction"
+
+echo "Result :an array of arrays describing the groupings"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"listaddressgroupings\"}"

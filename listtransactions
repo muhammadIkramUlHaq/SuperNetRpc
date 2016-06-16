@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo""
+echo "The listtransactions RPC returns the most recent transactions that affect the wallet."
+echo "Parameter #1—an account name to get transactions from
+Parameter #2—the number of transactions to get
+Parameter #3—the number of transactions to skip
+Parameter #4—whether to include watch-only addresses in details and calculations
+Result—payment details "
+
+echo""
+echo "Currently RPCtesting account doesn't have any transaction"
+echo ""
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"listtransactions\",\"account\":\"testRPCBTC\",\"count\":\"1\",\"skip\":\"0\",\"includewatchonly\":\"0\"}"
+
+echo ""
+
+

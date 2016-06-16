@@ -1,0 +1,9 @@
+# !bin/bash
+
+echo 'BitCoin RPC: listsinceblock'
+echo 'Parameter1: Block Hash'
+echo 'Parameter2: target'
+echo 'Parameter3: flag'
+
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"listsinceblock\",\"blockhash\":\"{hash}\",\"target\":\"{int}\",\"flag\":\"{int}\"}"

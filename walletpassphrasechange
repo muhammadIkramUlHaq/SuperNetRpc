@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo "RPC : walletpassphrasechange"
+echo "This RPC will change the passphrase to new one"
+echo "Parameters:"
+echo "oldpassword: old password string which we need to change"
+echo "newpassword: new password string which we need to use onward"
+
+echo ""
+
+echo "Result: On successful result , password will be changed!"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"walletpassphrasechange\",\"oldpassword\":\"kashifali\",\"newpassword\":\"kashifali1\"}"

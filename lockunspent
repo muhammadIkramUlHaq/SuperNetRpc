@@ -1,0 +1,12 @@
+# !/bin/bash
+
+
+echo 'BitCoin RPC : lockunspent'
+echo  'The lockunspent RPC temporarily locks or unlocks specified transaction outputs. A locked transaction output will not be chosen by automatic coin selection when spending bitcoins. Locks are stored in memory only, so nodes start with zero locked outputs and the locked output list is always cleared when a node stops or fails'
+
+echo ""
+echo 'Parameter1 : lock or unlock -> false for lock , true for unlock'
+echo 'Parameter2 : array of transaction ID and Vout to be locked'
+ 
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"lockunspent\",\"flag\":\"0\",\"array\":\"{[txids]}\"}"
+

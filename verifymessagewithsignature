@@ -1,0 +1,11 @@
+#!/bin/bash
+# 
+# VerifyMesage 
+
+echo 'Bitcoin RPC : verifymessage'
+echo 'Param1 : Address'
+echo 'Param2 : Signature'
+echo 'Param3 : Message'
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"verifymessage\",\"address\":\"RK4Frtw5N5Zm6MrUjgmh8ZG1JGEtRJgXVo\",\"sig\":\"IAIdL/pmlL28J3EeaYclqEr3SoL/hEM5JToKqTwkene6Xo8mFr0dwxmD8hWWQG4c65W7LGMLYX2Nyl3cORD73Tw=\",\"message\":\"testSignMessage\"}"
+

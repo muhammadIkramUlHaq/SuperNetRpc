@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo "RPC: vanitygen"
+echo ""
+echo "Parameter:"
+echo "vanity: to be provided in string"
+
+echo "Result:"
+
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"vanitygen\",\"vanity\":\"{string}\"}"
