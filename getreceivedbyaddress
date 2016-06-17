@@ -1,1 +1,12 @@
+#! /bin/bash
+
+echo "RPC: getreceivedbyaddress"
+echo "The getreceivedbyaddress RPC returns the total amount received by the specified address in transactions with the specified number of confirmations"
+echo "Parameters:"
+echo "Parameter # 1 - the address"
+echo "Parameter #2—the minimum number of confirmations"
+echo ""
+echo "Result—the number of bitcoins received" 
+
+
 curl --url "http://127.0.0.1:7778" --data "{\"method\":\"getreceivedbyaddress\",\"params\":[\"RCEZoVBCHaZDyP4ocyhS3F2TN2EMVsPzcT\"]}"

@@ -16,4 +16,4 @@ echo ""
 
 echo "Result: on successful transaction TXID will be returned!"
 
-curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"sendfrom\",\"fromaccount\":\"{}\",\"toaddress\":\"{}\",\"amount\":\"{}\",\"minconf\":\"{}\",\"comment\":\"{}\"}"
+curl --url "http://127.0.0.1:7778" --data "{\"agent\":\"bitcoinrpc\",\"method\":\"sendfrom\",\"fromaccount\":\"{}\",\"toaddress\":\"{}\",\"amount\":\"{}\",\"minconf\":\"2\",\"comment\":\"Bit Coins Transformation\"}"

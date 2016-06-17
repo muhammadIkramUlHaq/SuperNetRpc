@@ -1,1 +1,12 @@
+#! /bin/bash
+
+echo "RPC:setaccount"
+echo "This RPC is used to set new account with your given address and account name"
+echo "Parameters:"
+echo "Parameter # 1 - Address to be used"
+echo "Parameter # 2 - Account Name to be used"
+
+echo ""
+echo "Result:Success or Error"
+
 curl --url "http://127.0.0.1:7778" --data "{\"method\":\"setaccount\",\"params\":[\"RSM6HUAiQabjEzoXrtptdyMUrUsbYicTDE\", \"newaccount\"]}"
